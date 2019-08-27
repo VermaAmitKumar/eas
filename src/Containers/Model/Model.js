@@ -2,23 +2,25 @@
 import {MDBBtn, MDBContainer, MDBModal, MDBModalBody, MDBModalFooter, MDBModalHeader} from 'mdbreact';
 
 class ModalPage extends Component {
-    state = {
-        options: [
-            {
-                text: "Option 1",
-                value: "1"
-            },
-            {
-                text: "Option 2",
-                value: "2"
-            },
-            {
-                text: "Option 3",
-                value: "3"
-            }
-        ]
-    };
-
+    constructor(props) {
+        super(props);
+        this.state = {
+            options: [
+                {
+                    text: "Option 1",
+                    value: "1"
+                },
+                {
+                    text: "Option 2",
+                    value: "2"
+                },
+                {
+                    text: "Option 3",
+                    value: "3"
+                }
+            ]
+        };
+    }
     render() {
         return (
             <MDBContainer>
